@@ -209,13 +209,13 @@
   </div>
 
   <div style="background: #2a2a3c; padding: 12px; border-radius: 10px; margin-top: 10px;">
-    <span>👥 Player online: </span>
+    <span> Player online: </span>
     <strong id="player-count" style="color: #a6e3a1; font-size: 20px;">- / -</strong>
   </div>
 </div>
 
 <script>
-  const serverIP = "minestablesmp.aternos.me"; 
+  const serverIP = "minestablesmp.aternos.me:13195"; 
 
   async function fetchServerStatus() {
     const statusText = document.getElementById("status-text");
@@ -247,6 +247,7 @@
   fetchServerStatus();
   setInterval(fetchServerStatus, 60000);
 </script>
-
+<footer>
+        <p>&copy; 2026 MinestableSMP Network. All rights reserved.</p>
 </body>
 </html>
