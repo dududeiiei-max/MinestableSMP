@@ -151,6 +151,47 @@
             font-size: 0.875rem;
             margin-top: 60px;
         }
+        .featured-gallery {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-gallery h2 {
+    color: #f5e0dc;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 15px;
+    color: #fff;
+    text-align: left;
+}
+
     </style>
 </head>
 <body>
@@ -162,6 +203,20 @@
                 <a href="#about">About</a>
                 <a href="#features">Features</a>
                 <a href="#status">Status</a>
+                <div class="featured-gallery">
+    <h2>Featured Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="featured_build.png" alt="Community Build: The Nexus Core">
+            <div class="image-overlay">Community Build: The Nexus Core</div>
+        </div>
+        <div class="gallery-item">
+            <img src="community_event.png" alt="Community Event: Piglin Outpost Raid">
+            <div class="image-overlay">Community Event: Piglin Outpost Raid</div>
+        </div>
+    </div>
+</div>
+
             </nav>
         </div>
     </header>
@@ -245,7 +300,7 @@
   fetchServerStatus();
   setInterval(fetchServerStatus, 60000);
 </script>
-
+    
 <footer>
         <p>&copy; 2026 MinestableSMP Network. All rights reserved.</p>
 </body>
