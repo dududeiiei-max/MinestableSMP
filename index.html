@@ -6,7 +6,7 @@
     <title>SoultailSMP — SMP NETWORK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-main: #0f0e17;
@@ -25,7 +25,7 @@
         body {
             background-color: var(--bg-main);
             color: var(--text-main);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Chakra Petch', sans-serif;
             line-height: 1.6;
         }
         header {
@@ -45,8 +45,8 @@
             padding: 16px 20px;
         }
         .brand {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.4rem;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--text-main);
             letter-spacing: 1px;
@@ -58,7 +58,8 @@
             color: var(--text-sub);
             text-decoration: none;
             margin-left: 20px;
-            font-size: 0.95rem;
+            font-size: 1rem;
+            font-weight: 600;
             transition: color 0.2s;
         }
         .nav-links a:hover {
@@ -79,8 +80,8 @@
             color: #ff8906;
             padding: 6px 16px;
             border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
+            font-size: 0.9rem;
+            font-weight: 600;
             margin-bottom: 24px;
         }
         .dot {
@@ -91,10 +92,10 @@
             box-shadow: 0 0 8px #ff8906;
         }
         h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 3rem;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 3.2rem;
             font-weight: 700;
-            letter-spacing: -1px;
+            letter-spacing: 0px;
             margin-bottom: 12px;
         }
         .subtitle {
@@ -114,10 +115,10 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
         }
         .ip-text {
-            font-family: monospace;
-            font-size: 1.1rem;
+            font-family: 'Chakra Petch', monospace;
+            font-size: 1.2rem;
             color: var(--accent-red);
-            font-weight: 600;
+            font-weight: 700;
         }
         .featured-gallery {
             max-width: 1000px;
@@ -128,7 +129,8 @@
         .featured-gallery h2 {
             color: var(--text-main);
             margin-bottom: 20px;
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1.8rem;
         }
         .gallery-container {
             display: flex;
@@ -158,7 +160,8 @@
             padding: 15px;
             color: #fff;
             text-align: left;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: 600;
         }
         .features {
             max-width: 1000px;
@@ -176,9 +179,10 @@
             text-align: left;
         }
         .feature-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 8px;
             color: var(--text-main);
+            font-weight: 700;
         }
         .feature-card p {
             color: var(--text-sub);
@@ -189,7 +193,7 @@
             text-align: center;
             padding: 30px 20px;
             color: var(--text-sub);
-            font-size: 0.875rem;
+            font-size: 0.9rem;
             margin-top: 60px;
         }
     </style>
@@ -217,7 +221,7 @@
         
         <div class="ip-card">
             <div>
-                <div style="font-size: 0.75rem; color: var(--text-sub); text-align: left; letter-spacing: 0.5px;">SERVER IP</div>
+                <div style="font-size: 0.8rem; color: var(--text-sub); text-align: left; letter-spacing: 0.5px;">SERVER IP</div>
                 <div class="ip-text">IP:soultailsmp.joinmc.world</div>
             </div>
         </div>
@@ -252,15 +256,15 @@
         </div>
     </section>
     
-    <div style="background: #1f1e2e; color: #ffffff; padding: 20px; border-radius: 16px; max-width: 400px; margin: 20px auto; text-align: center; font-family: Arial, sans-serif; border: 1px solid #2e2c48; box-shadow: 0 8px 24px rgba(0,0,0,0.4);" id="status">
-        <h2 style="margin-top: 0; color: #ff8906;">Status</h2>
+    <div style="background: #1f1e2e; color: #ffffff; padding: 20px; border-radius: 16px; max-width: 400px; margin: 20px auto; text-align: center; font-family: 'Chakra Petch', sans-serif; border: 1px solid #2e2c48; box-shadow: 0 8px 24px rgba(0,0,0,0.4);" id="status">
+        <h2 style="margin-top: 0; color: #ff8906; font-size: 1.8rem;">Status</h2>
         <div style="margin: 15px 0;">
             <span id="status-indicator" style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: #888; margin-right: 8px;"></span>
-            <strong id="status-text" style="font-size: 18px;">Loading status...</strong>
+            <strong id="status-text" style="font-size: 20px;">Loading status...</strong>
         </div>
         <div style="background: #121118; padding: 12px; border-radius: 10px; margin-top: 10px;">
-            <span style="color: #a7a9be;">Players Online: </span>
-            <strong id="player-count" style="color: #ff8906; font-size: 20px;">- / -</strong>
+            <span style="color: #a7a9be; font-size: 1rem;">Players Online: </span>
+            <strong id="player-count" style="color: #ff8906; font-size: 22px;">- / -</strong>
         </div>
     </div>
 
