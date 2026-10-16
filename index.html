@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkynetSMP — Official Server Hub</title>
+    <title>SoultailSMP — Official Server Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -198,7 +198,7 @@
 
     <header>
         <div class="nav-container">
-            <div class="brand">Skynet<span>SMP</span></div>
+            <div class="brand">Soultail<span>SMP</span></div>
             <nav class="nav-links">
                 <a href="#about">About</a>
                 <a href="#features">Features</a>
@@ -210,7 +210,7 @@
     <section class="hero">
         <div class="status-pill">
             <span class="dot"></span>
-            ONLINE MODE ON
+            AUTO-START SERVER
         </div>
         <h1>Official Server Network</h1>
         <p class="subtitle">A dedicated community for builder projects, advanced Redstone engineering, and mega-scale infrastructure.</p>
@@ -218,7 +218,7 @@
         <div class="ip-card">
             <div>
                 <div style="font-size: 0.75rem; color: var(--text-sub); text-align: left; letter-spacing: 0.5px;">SERVER IP</div>
-                <div class="ip-text">144.31.46.18 port:14110</div>
+                <div class="ip-text">IP:soultailsmp.joinmc.world</div>
             </div>
         </div>
     </section>
@@ -247,7 +247,7 @@
             <p>Advanced mechanism projects including multi-floor elevators, sorting hubs, and automated farms.</p>
         </div>
         <div class="feature-card">
-            <h3>24/7 Persistence</h3>
+            <h3>NOT 24/7 Persistence</h3>
             <p>Maintained around the clock using custom SKYNET_BOT deployment on cloud servers.</p>
         </div>
     </section>
@@ -265,8 +265,8 @@
     </div>
 
     <script>
-        const serverIP = "144.31.46.18";
-        const serverPort = "14110";
+        const serverIP = "soultailsmp.joinmc.world";
+        const serverPort = "13195";
 
         async function fetchServerStatus() {
             const statusText = document.getElementById("status-text");
@@ -286,7 +286,7 @@
                     statusText.innerText = "OFFLINE";
                     statusText.style.color = "#f38ba8";
                     statusIndicator.style.backgroundColor = "#f38ba8";
-                    playerCount.innerText = "0 / 40";
+                    playerCount.innerText = "0 / 20";
                 }
             } catch (error) {
                 statusText.innerText = "Failed to load";
@@ -300,7 +300,7 @@
     </script>
     
     <footer>
-        <p>&copy; 2026 SkynetSMP Network. All rights reserved.</p>
+        <p>&copy; 2026 SoultailSMP Network. All rights reserved.</p>
     </footer>
 </body>
 </html>
